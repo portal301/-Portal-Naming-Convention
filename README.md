@@ -1,6 +1,6 @@
-# Portal301 Project의 Repository Namaing convention을 지켜주세요.
+# Portal301 Project Repository Namaing convention
 
-Portal Project Naming Convention
+Portal Project는 다음과 같은 Naming Convention을 따릅니다.
 <img src="nameing-convention.png">
 
 기본적으로 소문자를 지향하며 프로덕트 이름의 경우에는 대문자도 자유롭게 허용    
