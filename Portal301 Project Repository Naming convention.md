@@ -1,4 +1,4 @@
-# Portal301 Project Repository Namang convention
+# Portal301 Project Repository Naming convention
 
 Portal Project는 다음과 같은 Naming Convention을 따릅니다.
 <img src="nameing-convention.png">
