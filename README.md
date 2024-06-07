@@ -46,7 +46,7 @@ Portal Project는 다음과 같은 Naming Convention을 따릅니다.
    ```
 
 ### Git commitizen 사용방법
-1. 변경 사항을 ```git add ``` 명령어로 추가 한 후, ```git cz```를 commit 대신 사용합니다. <br><br>
+1. 변경 사항을 ```git add``` 명령어로 추가 한 후, ```git cz```를 commit 대신 사용합니다. <br><br>
 2. ``` Select the type of change that you're committing:```
    - 방향키 ```위```, ```아래``` 버튼을 사용하여 작업 타입을 입력합니다. <br><br>
 3. ```What is the scope of this change```
