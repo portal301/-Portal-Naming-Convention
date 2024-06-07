@@ -1,10 +1,10 @@
 # Git Behavior Convention
 
-### Commit message
+## Commit message
  - 커밋 메시지는 한글로 작성합니다.
  - 커밋의 단위는 ***+50/-50***이 가장 이상적입니다.
  - 커밋시에는 ```git commit``` 대신 ```git cz``` 명령어를 사용합니다.
-### Git commitizen 설치방법
+## Git commitizen 설치방법
 
 1. npm이 설치되지 않았다면, [Node.js](https://nodejs.org/en) 를 설치합니다.
 2. 커맨드라인 창을 열고 다음을 입력합니다.
@@ -15,7 +15,7 @@
    echo '{ "path": "cz-emoji-conventional" }' > ~/.czrc
    ```
 
-### Git commitizen 사용방법
+## Git commitizen 사용방법
 1. 변경 사항을 ```git add``` 명령어로 추가 한 후, ```git cz```를 commit 대신 사용합니다. <br><br>
 2. ``` Select the type of change that you're committing:```
    - 방향키 ```위```, ```아래``` 버튼을 사용하여 작업 타입을 입력합니다. <br><br>
@@ -39,9 +39,7 @@
 8. 여기까지 진행했다면, 다음과 같은 형식의 커밋 로그를 확인할 수 있습니다.
    ![image](https://github.com/portal301/NOTICE-Portal-Naming-Convention/assets/5483768/974bf870-7ec3-48bc-8be9-f7434307d1a6)
 
-<hr>
-
-### Branches
+## Branches
 브랜치 관리는 협업 중 변경사항을 추적하고 관리하는 데 매우 유용한 도구입니다. 이를 통해 개발자들은 독립적으로 작업을 진행할 수 있으며, 서로의 작업에 영향을 주지 않고 병렬로 개발을 진행할 수 있습니다. 또한, 브랜치를 사용하면 각 작업의 변경사항을 명확하게 구분하고 관리할 수 있어, 프로젝트의 복잡성을 효과적으로 줄일 수 있습니다.
 
 코드리뷰는 코드 퀄리티를 보장하는 데 중요한 역할을 합니다. 브랜치를 통해 개발된 코드는 병합 전에 반드시 코드리뷰를 거치게 함으로써, 코드의 오류를 사전에 발견하고 수정할 수 있습니다. 또한, 코드리뷰 과정은 팀원 간의 지식 공유와 협력을 촉진하여, 전체적인 코드 퀄리티를 향상시킵니다.
@@ -61,4 +59,22 @@ Feature 개발 이후 `main` 브랜치로 Merge 합니다.
   - ```Squash & Merge``` 방식 사용을 권장합니다.
     - Merge 이후 origin repository에서 해당 브랜치는 삭제합니다.
     - [Merge 방식 차이에 대해 읽어보면 좋은 글](https://blog.outsider.ne.kr/1704) 
-<hr>
+
+## Pull Requests
+[Portal301 PR 가이드라인](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Git/PR%20Convention.md)
+
+## Git commit log 간지나게 보는법
+1. 커맨드 라인 툴에서 ```nano ~./gitconfig```를 입력합니다. 다른 텍스트 편집기로 ```~./gitconfig```를 수정하셔도 됩니다.
+2. 다음 내용을 복사 후 붙여넣기 합니다.
+	 ```
+	[alias]
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+	lg = lg1
+	```
+3. 윈도우 기준 ```ctrl + x```를 눌러 저장합니다.
+4. 프로젝트 폴더로 이동해 ```git lg```를 입력합니다.
+5. 짜잔
+   ![image](https://github.com/portal301/NOTICE-Portal-Naming-Convention/assets/5483768/a1056634-fb24-462f-91bb-908e454ff655)
+
+
