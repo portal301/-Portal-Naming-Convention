@@ -1,14 +1,5 @@
 # Portal301 Project Repository Namaing convention
-
-Portal Project는 다음과 같은 Naming Convention을 따릅니다.
-<img src="nameing-convention.png">
-
-기본적으로 소문자를 지향하며 프로덕트 이름의 경우에는 대문자도 자유롭게 허용    
-## 예시    
-### Synchro-TR.gui.electron    
-### Synchro-TR.robot.py    
-### Synchro-TR.tracker.unity    
-
+[Portal 301 프로젝트 명명 규칙](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Portal301%20Project%20Repository%20Namaing%20convention)
 <br>
 
 # Project Code/Git Behavior Convention
