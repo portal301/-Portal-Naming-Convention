@@ -15,4 +15,4 @@
 [Portal 301 코드 컨벤션](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Code%20Convention.md)
 
 ## Git Behavior Convention
-[Portal 301 Git 사용 규칙](https://github.com/portal301/NOTICE-Portal-Project-Conventions/new/main)
+[Portal 301 Git 사용 규칙]([https://github.com/portal301/NOTICE-Portal-Project-Conventions/new/main](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Git/Git%20Behavior%20Convention.md))
