@@ -1,5 +1,5 @@
 # Portal301 Project Repository Naming convention
-[Portal 301 프로젝트 명명 규칙](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Portal301%20Project%20Repository%20Namaing%20convention)
+[Portal 301 프로젝트 명명 규칙](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Portal301%20Project%20Repository%20Naming%20convention.md)
 <br>
 
 # Project Code/Git Behavior Convention
