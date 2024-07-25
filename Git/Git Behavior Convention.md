@@ -64,7 +64,7 @@ Feature 개발 이후 `main` 브랜치로 Merge 합니다.
 [Portal301 PR 가이드라인](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Git/PR%20Convention.md)
 
 ## Git commit log 간지나게 보는법
-1. 커맨드 라인 툴에서 ```nano ~./gitconfig```를 입력합니다. 다른 텍스트 편집기로 ```~./gitconfig```를 수정하셔도 됩니다.
+1. 커맨드 라인 툴에서 ```nano ~/.gitconfig```를 입력합니다. 다른 텍스트 편집기로 ```~/.gitconfig```를 수정하셔도 됩니다.
 2. 다음 내용을 복사 후 붙여넣기 합니다.
 	 ```
 	[alias]
