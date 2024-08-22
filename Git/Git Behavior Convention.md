@@ -63,6 +63,21 @@ Feature 개발 이후 `main` 브랜치로 Merge 합니다.
 ## Pull Requests
 [Portal301 PR 가이드라인](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Git/PR%20Convention.md)
 
+## Issue 작성방법
+- Github의 Issue는 버그 리포팅, 테스트 배포시 가이드등 여러가지 방법으로 사용될 수 있습니다.
+
+### 예시 : Test
+- 배포 전 테스트 단계에서 행해지는 테스트는 두가지로 나눌 수 있습니다.
+  - 특정 Feature 별로 사용하는 **Task Test**: 이는 단 하나의 기능을 테스트합니다.
+  - 통합 기능을 테스트하는 **Acceptance Test**: 이는 기능보다 더 큰 단위의 테스트입니다. ex) 특정 뷰 컴포넌트의 기능 등..
+- Test 작성시에는 개발자가 아닌 사람이라도, Issue에 적힌 내용만 보고 쉽게 따라할 수 있도록 작성되어야합니다.
+- 모든 단계는 전문용어가 아닌 ***Plain Language***로 작성되어야 합니다.
+- Acceptance Test 작성시에는 Task Test를 포함한 종합적인 테스트 방법이 작성되어야 합니다.
+  
+#### Task Test 예시
+![image](https://github.com/user-attachments/assets/717525e2-a6dd-4892-8e9a-962a9b497a17)
+
+
 ## Git commit log 간지나게 보는법
 1. 커맨드 라인 툴에서 ```nano ~/.gitconfig```를 입력합니다. 다른 텍스트 편집기로 ```~/.gitconfig```를 수정하셔도 됩니다.
 2. 다음 내용을 복사 후 붙여넣기 합니다.
