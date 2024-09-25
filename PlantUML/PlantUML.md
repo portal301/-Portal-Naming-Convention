@@ -13,9 +13,9 @@ PlantUML은 UML 다이어그램을 텍스트 기반으로 생성할 수 있는 �
 PlantUML의 설치를 위해서는 **Java**와 **Graphviz**가 필요합니다. 설치 방식은 운영체제별로 상이하며, 이 문서는 Windows를 기준으로 설명합니다.
 
 ### Windows
-1. [자바](!https://www.java.com/ko/download/ie_manual.jsp?locale=ko)를 설치합니다.
-2. [graphviz-dot](!https://plantuml.com/ko/graphviz-dot)을 설치합니다.
-3. [plantuml.jar](!https://plantuml.com/ko/download)를 설치 후 컴퓨터 특정 경로에 저장합니다.
+1. [자바](https://www.java.com/ko/download/ie_manual.jsp?locale=ko)를 설치합니다.
+2. [graphviz-dot](https://plantuml.com/ko/graphviz-dot)을 설치합니다.
+3. [plantuml.jar](https://plantuml.com/ko/download)를 설치 후 컴퓨터 특정 경로에 저장합니다.
    1. eg. ```"C:\plantUML\plantuml-mit-1.2024.7.jar"```
 4. 환경변수를 세팅합니다.
    1. 제어판 > 시스템 > 고급 시스템설정 > 환경변수 클릭
