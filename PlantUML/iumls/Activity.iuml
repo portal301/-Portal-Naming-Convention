@@ -1,0 +1,11 @@
+@startuml Activity
+start
+:Start Process;
+:Check Availability;
+if (Available) then (yes)
+  :Proceed with Order;
+else (no)
+  :Notify User;
+endif
+stop
+@enduml

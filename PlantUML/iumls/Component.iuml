@@ -1,0 +1,6 @@
+@startuml Component
+package "Web Application" {
+  [Browser] --> [Web Server]
+  [Web Server] --> [Database]
+}
+@enduml

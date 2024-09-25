@@ -16,3 +16,6 @@
 
 ## Git Behavior Convention
 [Portal 301 Git 사용 규칙](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Git/Git%20Behavior%20Convention.md)
+
+## PlantUML
+[Portal 301 Project 설계](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/PlantUML.md)

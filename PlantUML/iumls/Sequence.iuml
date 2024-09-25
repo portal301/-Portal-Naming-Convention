@@ -1,0 +1,6 @@
+@startuml Sequence
+Alice -> Bob: Hello Bob, how are you?
+Bob --> Alice: I am good thanks!
+Alice -> Bob: Let's meet at 5pm
+Bob --> Alice: Sure, see you then!
+@enduml

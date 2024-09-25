@@ -1,0 +1,14 @@
+@startuml Object
+object Car {
+  model = "Tesla Model S"
+  year = 2023
+  color = "Red"
+}
+
+object Owner {
+  name = "Alice"
+  age = 30
+}
+
+Car --> Owner : owned by
+@enduml
