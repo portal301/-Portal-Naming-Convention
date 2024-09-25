@@ -46,7 +46,7 @@ Alice -> Bob: Let's meet at 5pm
 Bob --> Alice: Sure, see you then!
 @enduml
 ```
-![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/iumls/Sequence.iuml)
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/portal301/NOTICE-Portal-Project-Conventions/refs/heads/main/PlantUML/iumls/Sequence.iuml)
 결과: Alice가 Bob에게 메시지를 보내고, Bob이 응답하는 시퀀스가 그려집니다.
 
 
@@ -65,7 +65,7 @@ class Dog {
 Animal <|-- Dog
 @enduml
 ```
-![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/iumls/Class.iuml)
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/portal301/NOTICE-Portal-Project-Conventions/refs/heads/main/PlantUML/iumls/Class.iuml)
 결과: Animal 클래스를 상속받는 Dog 클래스가 포함된 클래스 다이어그램을 생성합니다.
 
 ### 활동 다이어그램
@@ -82,7 +82,7 @@ endif
 stop
 @enduml
 ```
-![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/iumls/Activity.iuml)
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/portal301/NOTICE-Portal-Project-Conventions/refs/heads/main/PlantUML/iumls/Activity.iuml)
 결과: 활동 다이어그램으로 프로세스의 시작, 조건 검사, 프로세스 종료를 나타냅니다.
 
 ### 객체 다이어그램
@@ -102,7 +102,7 @@ object Owner {
 Car --> Owner : owned by
 @enduml
 ```
-![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/iumls/Object.iuml)
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/portal301/NOTICE-Portal-Project-Conventions/refs/heads/main/PlantUML/iumls/Object.iuml)
 결과: 객체 다이어그램으로 Car와 Owner 객체를 정의하고 관계를 표현합니다.
 
 ### 컴포넌트 다이어그램 
@@ -114,14 +114,16 @@ package "Web Application" {
 }
 @enduml
 ```
-![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/iumls/Component.iuml)
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/portal301/NOTICE-Portal-Project-Conventions/refs/heads/main/PlantUML/iumls/Component.iuml)
 결과: 컴포넌트 다이어그램으로 웹 애플리케이션의 브라우저, 웹 서버, 데이터베이스 간의 관계를 표현합니다.
 
 ## 마크다운에 삽입하기
 ```http://www.plantuml.com/plantuml/proxy```를 사용하여 온라인상에서 puml을 이미지로 랜더링할 수 있습니다.
 
 ### 예시
-```![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/iumls/Sequence.iuml)```
+```![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/portal301/NOTICE-Portal-Project-Conventions/refs/heads/main/PlantUML/iumls/Activity.iuml)```
 
-이때 URL Request의 src의 주소는 실제 파일이 들어있는 서버의 주소여야합니다.
-또한 ```cache=no``` 옵션을 통해 항상 깃헙에 최신으로 커밋된 버전의 이미지를 랜더링 할 수 있도록 합니다.
+- 이때 ```src=``` 이후 의 주소는 실제 유효한 파일의 URL이어야합니다.
+  ![Raw](Images/image.png)
+- 또한 파일의 URL은 단순 폴더의 위치가 아닌 RAW 버튼을 눌렀을 때 나오는 URL을 사용해야합니다.
+- 또한 ```cache=no``` 옵션을 통해 항상 깃헙에 최신으로 커밋된 버전의 이미지를 랜더링 할 수 있도록 합니다.

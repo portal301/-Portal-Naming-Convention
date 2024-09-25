@@ -18,4 +18,4 @@
 [Portal 301 Git 사용 규칙](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/Git/Git%20Behavior%20Convention.md)
 
 ## PlantUML
-[Portal 301 Project 설계](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/PlantUML.md)
+[UML 사용 및 설치 문서 ](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/PlantUML.md)
