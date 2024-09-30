@@ -19,3 +19,6 @@
 
 ## PlantUML
 [PUML 사용 및 설치 문서](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/PlantUML/PlantUML.md)
+
+## Test Code
+[Test Code 작성 방법](https://github.com/portal301/NOTICE-Portal-Project-Conventions/blob/main/TestCode/Testcode.md)
