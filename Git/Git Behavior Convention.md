@@ -92,4 +92,103 @@ Feature 개발 이후 `main` 브랜치로 Merge 합니다.
 5. 짜잔
    ![image](https://github.com/portal301/NOTICE-Portal-Naming-Convention/assets/5483768/a1056634-fb24-462f-91bb-908e454ff655)
 
+## Git-flow 전략
+Git-flow는 효율적인 브랜치 관리와 협업을 위해 고안된 브랜칭 모델입니다. 이 전략은 특정한 브랜치 구조와 작업 흐름을 정의하여 팀의 생산성을 높입니다.
+
+### Git-flow의 기본 브랜치
+1. Main (또는 Master) 브랜치:
+    - 항상 배포 가능한 상태를 유지합니다.
+    - 주요 릴리스가 이 브랜치에 병합됩니다.
+  
+2. Develop 브랜치:
+    - 개발 중인 모든 기능이 통합되는 브랜치입니다.
+    - 새로운 기능 브랜치는 이 브랜치에서 분기합니다.
+
+3. Feature 브랜치:
+    - 새로운 기능 개발을 위해 사용됩니다.
+    - feature/ 접두사를 사용하여 브랜치를 구분합니다.
+        ```bash
+        git checkout -b feature/새로운기능
+        ```
+
+4. Release 브랜치:
+   - 릴리스 준비를 위해 사용됩니다.
+   - 버그 수정, 문서 작성, 기타 최종 조정이 이루어집니다.
+        ```bash
+        git checkout -b release/1.0 develop
+        ```
+
+5. Hotfix 브랜치:
+
+    - 배포된 버전에서 긴급히 수정이 필요한 경우 사용됩니다.
+
+        ```bash
+        git checkout -b hotfix/긴급수정내용 main
+        ```
+
+### Git-flow의 작업 흐름
+
+#### 1. 기능 개발:
+
+- develop 브랜치에서 새로운 feature 브랜치를 생성하고 작업을 진행합니다.
+    ```bash
+    git checkout develop
+    git checkout -b feature/새로운기능
+    # 작업 후 커밋
+    git add .
+    git commit -m "FEATURE: 새로운 기능 추가"
+    git push origin feature/새로운기능
+    ```
+#### 2. Pull Request 생성 및 병합:
+- 작업이 완료된 feature 브랜치에서 develop 브랜치로 PR을 생성하고 병합합니다.
+
+#### 3. 릴리즈 준비: 
+  - ```develop``` 브랜치에서 ```release``` 브랜치를 생성하여 릴리즈 준비를 합니다.
+    ```bash
+    git checkout develop
+    git checkout -b release/1.0
+    # 릴리즈 준비 작업 후 커밋
+    git add .
+    git commit -m "RELEASE: 버전 1.0 준비 완료"
+    git push origin release/1.0
+    ```
+#### 4. 릴리즈 브랜치 병합
+  - ```release``` 브랜치를 ```main```과 ```develop``` 브랜치에 병합합니다.
+
+    ```bash
+    git checkout main
+    git merge release/1.0
+    git push origin main
+
+    git checkout develop
+    git merge release/1.0
+    git push origin develop
+    ```
+
+#### 5. 핫픽스 적용
+- 배포된 버전에서 긴급히 수정이 필요한 경우 ```hotfix``` 브랜치를 생성하고 수정 후 ```main```과 ```develop``` 브랜치에 병합합니다.
+
+    ```bash
+    git checkout main
+    git checkout -b hotfix/긴급수정
+    # 긴급 수정 후 커밋
+    git add .
+    git commit -m "HOTFIX: 긴급 버그 수정"
+    git push origin hotfix/긴급수정
+
+    git checkout main
+    git merge hotfix/긴급수정
+    git push origin main
+
+    git checkout develop
+    git merge hotfix/긴급수정
+    git push origin develop
+    ```
+
+### Git-flow의 장점
+- **명확한 브랜치 구조**: 각 브랜치의 역할이 명확하여 작업 흐름을 쉽게 이해하고 관리할 수 있습니다.
+- **안정적인 릴리즈**: 릴리즈 브랜치를 통해 배포 전 최종 조정을 할 수 있어 안정적인 릴리스를 보장합니다.
+- **효율적인 협업**: 팀원들이 각자 역할에 맞게 브랜치를 관리하며 작업할 수 있어 협업이 원활해집니다.
+
+
 
